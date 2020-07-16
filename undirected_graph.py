@@ -62,7 +62,8 @@ class UndiGraph:
 				print(self.Matrix[v][v2], end='\t')
 
 		print('\n')
-
+	
+	# This will be a breadth-first search algorithm
 	def bfs(self):
 		pass
 
@@ -70,7 +71,7 @@ class UndiGraph:
 	# Since this is undirected graph, we only need to check n/2 rows
 	# When we find a pair, we can mark its partner as checked as well
 	def traverse_matrix(self):
-		self.Matrix[self.key[]]
+		pass
 
 
 ##########################
@@ -117,7 +118,7 @@ abc_graph.show_matrix()
 
 # Find vertices with io degree of 0
 # 1) check each element in each row until non 0 found
-#for every k, v in key, 
+# 2) mark pair as visited
 
 
 
