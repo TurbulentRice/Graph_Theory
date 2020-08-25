@@ -1,22 +1,31 @@
 # Graph_Theory
-Data structures and implementations useful in graph-related problems.
+Data structures and algorithms useful in graph-related problems.
 
-# Directed Graph Data Structures
-Node:		Directional vertex object
-        Contains lists of in/out-neighbors, representing edges.
- 			  Implements recursive depth-first search through neighbors
+# Directed Graphs
+Node:	        Directional vertex object
+                Contains lists of in/out-neighbors, representing edges.
+ 	        Implements recursive depth-first search through neighbors
         
-DiGraph:	Directed graph object
-          Uses an adjacency list (dict) to "map" edges.
-          Kosaraju Algorithm method determines strongly connected components by performing DFS from each Node.
+DiGraph:        Directed graph object
+                Uses an adjacency list (dict) to "map" edges.
+                Kosaraju Algorithm method determines strongly connected components by performing DFS from each Node.
           
-# Undirected Graph Data Structures
-Vertex: Wrapper for a string identifier, potentially superfluous.
+# Undirected Graphs
+Vertex:         Wrapper for a string identifier, potentially superfluous.
 
-Edge:   Weighted edge between two vertices. In/out neighbors are undirectional (start/end is arbitrary)
-        Holds weight info for connections between vertecies.
-        Can be used in Flow Network implementations as well, as it is both undirected and weighted.
+Edge:           Weighted edge between two vertices. In/out neighbors can be either directional or undirectional (start/end may be arbitrary)
+                Holds weight info for connections between vertecies.
+                Can be used in Flow Network implementations as well, since it is weighted and possibly directional.
         
-UndiGraph:  Undirected graph object
-            Uses adjacency matrix (n x n dimensional array) in conjunciton with ID map (dict) for traversal
-            Implements bread-first search through matrix.
+UndiGraph:      Undirected graph object
+                Uses adjacency matrix (n x n dimensional array) in conjunciton with ID map (dict) for traversal
+                Implements bread-first search through matrix.
+            
+# Flow Networks (work in progress!)
+Uses Node, DiGraph, and Edge objects.
+
+Flow:           Subclass of Node. Inherits all from parent, adds inflow and outflow attributes.
+
+Arc:            Subclass of Edge. Inherits all from parent, adds capacity, flow, and residual capacity attributes.
+
+Network:        Subclass of DiGraph. Inherits all from parent, added algorithms for determining sinks, sources, and max and min flow.
