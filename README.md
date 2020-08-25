@@ -1,5 +1,5 @@
 # Graph_Theory
-Data structures and algorithms useful in graph-related problems.
+Data structures and algorithms useful in graph theory-related problems.
 
 # Directed Graphs
 Node:	        Directional vertex object
