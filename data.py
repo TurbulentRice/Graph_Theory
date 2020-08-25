@@ -1,17 +1,8 @@
 import random
 
-######################
-# GENERAL FUNCTIONS
-######################
-
-# UI Format
-def f():
-    print("-" * 40)
-
-# Show iterable line by line
-def show_it(iterable):
-    for thing in iterable:
-        print(thing)
+##############################
+#   DATA MANIPULATION
+##############################
 
 # Return list of A-Z + a-z
 def get_alpha(lower=False):
@@ -45,9 +36,9 @@ def add_weights(r):
         weighted[i].append(random.randint(1, 999))
     return weighted
 
-#########
-# DATA
-#########
+##################
+#   DATA
+##################
 
 # Airport Data
 # Vertices
@@ -81,10 +72,5 @@ weighted_routes = add_weights(routes)
 # Alphabetical Paths Data
 # A-Z Vertices
 alpha_v = get_alpha()
-# Random Edges
-alpha_e = add_weights([random.sample(alpha_v, 2) for x in alpha_v])
-
-
-
-
-
+# Random Edges (50 )
+alpha_e = add_weights([random.sample(alpha_v, 2) for x in range(50)])
