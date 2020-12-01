@@ -1,5 +1,8 @@
 # Graph_Theory
-Data structures and algorithms useful in graph theory-related problems.
+Data structures and algorithms useful in graph theory-related problems, including:
+* Finding shortest paths between nodes.
+* Determining strongly connected components of a system.
+* Calculating maximum and minimunm flow in a network.
 
 # Directed Graphs
 Node:	        Directional vertex object
