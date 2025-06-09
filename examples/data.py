@@ -41,36 +41,28 @@ def add_weights(r):
 ##################
 
 # Airport Data
-# Vertices
-airports = ["BGI", "CDG", "DEL", "DOH", "DSM", "EWR", "EYW", "HND", "ICN",
-            "JFK", "LGA", "LHR", "ORD", "SAN", "SFO", "SIN", "TLV", "BUD"]
+# Vertices (trimmed to 10 for concise example output)
+airports = ["BGI", "CDG", "DEL", "DOH", "DSM", "EWR", "HND", "ICN", "JFK", "LGA"]
 # Edges
 routes = [
-    ["DSM", "ORD"],
-    ["ORD", "BGI"],
+    ["DSM", "EWR"],
+    ["EWR", "BGI"],
     ["BGI", "LGA"],
-    ["SIN", "CDG"],
-    ["CDG", "SIN"],
-    ["CDG", "BUD"],
+    ["CDG", "DEL"],
     ["DEL", "DOH"],
-    ["DEL", "CDG"],
-    ["TLV", "DEL"],
+    ["DOH", "CDG"],
     ["EWR", "HND"],
     ["HND", "ICN"],
-    ["HND", "JFK"],
     ["ICN", "JFK"],
     ["JFK", "LGA"],
-    ["EYW", "LHR"],
-    ["LHR", "SFO"],
-    ["SFO", "SAN"],
-    ["SFO", "DSM"],
-    ["SAN", "EYW"]]
+    ["LGA", "EWR"],
+]
 # Weighted Edges
 weighted_routes = add_weights(routes)
 
 
 # Alphabetical Paths Data
-# A-Z Vertices
-alpha_v = get_alpha()
+# A-J Vertices
+alpha_v = get_alpha()[:10]  # A–J
 # Random Edges (50 )
 alpha_e = add_weights([random.sample(alpha_v, 2) for x in range(50)])

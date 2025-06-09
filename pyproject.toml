@@ -1,0 +1,43 @@
+# Build configuration for the *graph_theory* package
+# --------------------------------------------------
+# PEP 517 / PEP 621 compliant; built with setuptools-backend only.
+
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "graph_theory"
+version = "0.1.0"
+description = "Light-weight, dependency-free data structures & algorithms for teaching and prototyping classic graph-theory concepts."
+authors = [
+    { name = "Sean Russell", email = "sean@example.com" }
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+keywords = ["graph", "algorithms", "max-flow", "scc", "education"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Education",
+    "Topic :: Scientific/Engineering :: Mathematics"
+]
+
+[project.urls]
+Homepage = "https://github.com/TurbulentRice/Graph_Theory"
+Documentation = "https://github.com/TurbulentRice/Graph_Theory#readme"
+Source = "https://github.com/TurbulentRice/Graph_Theory"
+Issues = "https://github.com/TurbulentRice/Graph_Theory/issues"
+
+[tool.setuptools]
+packages = ["graph_theory"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "black>=24.0",
+    "flake8>=7.0",
+    "mypy>=1.10"
+]
