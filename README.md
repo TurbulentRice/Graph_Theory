@@ -77,8 +77,8 @@ A full runnable demo is in **`examples/main.py`**.
 
 ```bash
 # clone repo (or use your existing working copy)
-git clone https://github.com/TurbulentRice/Graph_Theory.git
-cd Graph_Theory
+git clone https://github.com/TurbulentRice/graph-theory.git
+cd graph-theory
 
 # install package in‑place (editable mode) + run example
 pip install -e .
