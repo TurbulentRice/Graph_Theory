@@ -1,4 +1,4 @@
-# Build configuration for the *graph_theory* package
+# Build configuration for the *graph-theory* package
 # --------------------------------------------------
 # PEP 517 / PEP 621 compliant; built with setuptools-backend only.
 
@@ -7,7 +7,7 @@ requires = ["setuptools>=64", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "graph_theory"
+name = "graph-theory"
 version = "0.1.0"
 description = "Light-weight, dependency-free data structures & algorithms for teaching and prototyping classic graph-theory concepts."
 authors = [
@@ -26,10 +26,10 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/TurbulentRice/Graph_Theory"
-Documentation = "https://github.com/TurbulentRice/Graph_Theory#readme"
-Source = "https://github.com/TurbulentRice/Graph_Theory"
-Issues = "https://github.com/TurbulentRice/Graph_Theory/issues"
+Homepage = "https://github.com/TurbulentRice/graph-theory"
+Documentation = "https://github.com/TurbulentRice/graph-theory#readme"
+Source = "https://github.com/TurbulentRice/graph-theory"
+Issues = "https://github.com/TurbulentRice/graph-theory/issues"
 
 [tool.setuptools]
 packages = ["graph_theory"]

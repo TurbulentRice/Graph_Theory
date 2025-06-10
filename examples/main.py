@@ -1,6 +1,6 @@
 # Package Path: examples/main.py
 """
-Example usage of the *graph_theory* package.
+Example usage of the *graph-theory* package.
 
 Run with:
     python -m examples.main

@@ -1,4 +1,4 @@
-# `graph_theory`
+# `graph-theory`
 
 Light‑weight, dependency‑free Python data structures and algorithms for teaching, prototyping, and solving classic graph‑theory problems:
 
@@ -30,7 +30,7 @@ The library is intentionally minimal, using pure standard‑library code, no C�
 
 ```bash
 # install the latest commit directly from GitHub
-pip install "git+https://github.com/TurbulentRice/Graph_Theory.git#egg=graph_theory"
+pip install "git+https://github.com/TurbulentRice/graph-theory.git#egg=graph-theory"
 ```
 
 > **Note**: until a PyPI release is published, installation is via git URL (or cloning and `pip install -e .`).
